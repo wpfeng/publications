@@ -69,3 +69,5 @@ no titles, western text only):
 The bEST toolbox (`best.py`) is by Taroni et al. (2026), *Seismological Research
 Letters*, doi:10.1785/0220250175 — please cite it if you use the bEST estimators.
 Catalogue data belong to their respective sources (see original publications).
+
+bvalue_analysis.py is developed by  Lvjian Wu and Wanpeng Feng (2026), *Earthquake Science, (submitted)
