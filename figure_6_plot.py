@@ -47,7 +47,7 @@ ITALY = os.path.join(BASE, "data", "Amatrice_CAT5_Mw.afts")
 RIDGE = os.path.join(BASE, "data", "ridgecrest_srl-2019309.afts")
 BA_DIR = os.path.join(BASE, "data", "before_after_1d")   # ±1 d 前后子目录
 OUT_DIR = os.path.join(BASE, "output")
-OUT = os.path.join(OUT_DIR, "figure_7")
+OUT = os.path.join(OUT_DIR, "figure_6")
 
 ITALY_TARGETS = [("2016-08-24", "M6.08"), ("2016-10-30", "M6.06"),
                  ("2017-01-18", "M5.26")]
