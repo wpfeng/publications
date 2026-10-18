@@ -8,7 +8,7 @@ of the Gutenberg–Richter b value and its co-seismic drop across earthquake seq
 | File | Description |
 |------|-------------|
 | `figure_4_plot.py` | Script reproducing **Figure 4** — dual-axis (magnitude-time + b value) comparison of the Ridgecrest 2019 (Mw 7.1) and Monte Cristo 2020 (Mw 6.5) aftershock sequences. |
-| `figure7_plot.py` | Script reproducing **Figure 7** — three-panel figure: (a) 2016–2017 Italy sequence (Amatrice Mw 6.08, Norcia Mw 6.06, Mw 5.26 events marked); (b) 2019 Ridgecrest sequence (Mw 7.1 marked); (c) cross-event Δb summary with six b-value estimators (MLE, MLE-bEST, KS-Taroni, b-positive, bpos-bEST, bmorepos). |
+| `figure_6_plot.py` | Script reproducing **Figure 7** — three-panel figure: (a) 2016–2017 Italy sequence (Amatrice Mw 6.08, Norcia Mw 6.06, Mw 5.26 events marked); (b) 2019 Ridgecrest sequence (Mw 7.1 marked); (c) cross-event Δb summary with six b-value estimators (MLE, MLE-bEST, KS-Taroni, b-positive, bpos-bEST, bmorepos). |
 | `bvalue_analysis.py` | Utilities for reading `.afts` catalogues and b-value estimation (MAXC completeness magnitude, MLE). Only depends on `numpy` / `pandas` / `matplotlib`. |
 | `best.py` | Source of the bEST toolbox (Taroni et al., 2026, *SRL*, doi:10.1785/0220250175), used by the bEST-family estimators in Figure 7. Only depends on `numpy`. |
 | `data/` | Earthquake catalogues in `.afts` ASCII format (one event per row: time, lat, lon, depth, magnitude). |
@@ -20,7 +20,7 @@ of the Gutenberg–Richter b value and its co-seismic drop across earthquake seq
 - `data/ridgecrest_srl-2019309.afts` — relocated Ridgecrest catalogue (34,091 events,
   2019-07-04 to 2019-07-16; includes the M6.4 foreshock and the M7.1 mainshock).
 - `data/MonteCristo_NLL-SSST.afts` — NLL-SSST relocated Monte Cristo catalogue.
-- Figure 7 additionally expects `data/Amatrice_CAT5_Mw.afts` (2016–2017 Italy sequence,
+- Figure 6 additionally expects `data/Amatrice_CAT5_Mw.afts` (2016–2017 Italy sequence,
   Mw magnitudes) and `data/before_after_1d/*.afts` (±1-day before/after sub-catalogues
   for the four target events).
 
@@ -54,7 +54,7 @@ reproducible.
 - (b) Monte Cristo 2020 (Mw 6.5), 30-day window / 15-day step: b stays near ~0.8
   with a slow, fluctuating post-mainshock recovery.
 
-**Figure 7** — three vertically stacked panels (panel letters inside the frame,
+**Figure 6** — three vertically stacked panels (panel letters inside the frame,
 no titles, western text only):
 - (a)/(b) magnitude-time plots of the Italy and Ridgecrest catalogues with absolute
   time axes (YYYYMMDD); target earthquakes are marked with gold stars and dashed
